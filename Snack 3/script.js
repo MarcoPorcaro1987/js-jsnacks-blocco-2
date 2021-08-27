@@ -1,19 +1,10 @@
-var numeroutente=0;
-var somma=0;
-
-// Il software deve chiedere per 5 volte all’utente di inserire un numero.
-for ( var i=0; i < 5; i++) {
-    var numeroutente = parseInt(prompt("Inserisci un numero"));
-    somma+=numeroutente;
+// Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una
+// lista di cognomi, 
+var nomi = ["Marco", "Carmen", "Giovanni"];
+var cognomi = ["Del Piero", "Batistuta", "Baggio"];
+// Gatsby vuole generare una falsa lista di 3 invitati.
+listautenti = [];
+for (var i = 0; i < 3; i++) {
+    listautenti.push(nomi[Math.floor(Math.random() * 2)] +  " " + cognomi[Math.floor(Math.random() * 2)]); 
 }
-// Il programma stampa la somma di tutti i numeri inseriti.
-console.log(somma);
-// Esegui ciclo while.
-var contatore=0;
-while(contatore<5) {
-    inputUtente=parseInt(prompt("Inserisci un numero"));
-    somma+=numeroutente;
-    contatore++;
-}
-
-alert("Somma:" + somma);
+alert("La lista utenti è composta da: " + listautenti);

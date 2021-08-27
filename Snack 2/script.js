@@ -8,6 +8,6 @@ if ( numeroutente % 2 == 0 ) {
 } 
 // se è dispari stampa il numero successivo
 else {
-   var numeroutente = numeroutente + 1;
+   numeroutente = numeroutente + 1;
    alert("Il numero è " + numeroutente);
 }
