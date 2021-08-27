@@ -11,7 +11,7 @@ console.log(somma);
 // Esegui ciclo while.
 var contatore=0;
 while(contatore<5) {
-    numeroutente=parseInt(prompt("Inserisci un numero"));
+    inputUtente=parseInt(prompt("Inserisci un numero"));
     somma+=numeroutente;
     contatore++;
 }
