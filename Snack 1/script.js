@@ -1,4 +1,3 @@
-var numeroutente=0;
 var somma=0;
 
 // Il software deve chiedere per 5 volte all’utente di inserire un numero.
