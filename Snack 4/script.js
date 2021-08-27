@@ -1,19 +1,10 @@
-var numeroutente=0;
-var somma=0;
-
-// Il software deve chiedere per 5 volte all’utente di inserire un numero.
-for ( var i=0; i < 5; i++) {
-    var numeroutente = parseInt(prompt("Inserisci un numero"));
-    somma+=numeroutente;
+// Crea un array di numeri interi
+var listanumeri = [3, 4, 37, 54, 58, 65];
+// e fai la somma di tutti gli elementi che sono in posizione (indice dell'array) dispari
+var sommadispari = 0;
+for (i = 0; i < listanumeri.length; i++) {
+    if( i % 2 == 1) {
+    sommadispari += listanumeri[i]; 
+    }
 }
-// Il programma stampa la somma di tutti i numeri inseriti.
-console.log(somma);
-// Esegui ciclo while.
-var contatore=0;
-while(contatore<5) {
-    inputUtente=parseInt(prompt("Inserisci un numero"));
-    somma+=numeroutente;
-    contatore++;
-}
-
-alert("Somma:" + somma);
+console.log(sommadispari);
